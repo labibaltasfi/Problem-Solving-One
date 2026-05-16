@@ -172,3 +172,35 @@ exam_marks[1].push(44)
 for(const marks of exam_marks){
     console.log(marks)
 }
+
+//---------------------------------------------------------------------- problem 12
+
+let numbers = [10, 5, 25, 8, 40];
+
+let largest = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] > largest) {
+    largest = numbers[i];
+  }
+}
+
+console.log(largest);
+
+//---------------------------------------------------------------------- problem 13
+
+let number = 7;
+let isPrime = true;
+
+for (let i = 2; i < number; i++) {
+  if (number % i === 0) {
+    isPrime = false;
+    break;
+  }
+}
+
+if (isPrime) {
+  console.log("Prime");
+} else {
+  console.log("Not Prime");
+}
