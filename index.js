@@ -204,3 +204,23 @@ if (isPrime) {
 } else {
   console.log("Not Prime");
 }
+
+//---------------------------------------------------------------------- problem 13
+
+
+let text = "javascript";
+let count = 0;
+
+for (let i = 0; i < text.length; i++) {
+  if (
+    text[i] === "a" ||
+    text[i] === "e" ||
+    text[i] === "i" ||
+    text[i] === "o" ||
+    text[i] === "u"
+  ) {
+    count++;
+  }
+}
+
+console.log(count);
