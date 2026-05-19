@@ -224,3 +224,18 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(count);
+
+//---------------------------------------------------------------------- problem 14
+// Find smallest number
+
+let numbers = [10, 5, 2, 8, 1];
+
+let smallest = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] < smallest) {
+    smallest = numbers[i];
+  }
+}
+
+console.log(smallest);
