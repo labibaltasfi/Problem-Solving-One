@@ -254,3 +254,17 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(count);
+
+//---------------------------------------------------------------------- problem 16
+// Find duplicate characters
+
+let text = "programming";
+
+for (let i = 0; i < text.length; i++) {
+  for (let j = i + 1; j < text.length; j++) {
+    if (text[i] === text[j]) {
+      console.log(text[i]);
+      break;
+    }
+  }
+}
