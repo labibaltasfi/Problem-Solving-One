@@ -239,3 +239,18 @@ for (let i = 1; i < numbers.length; i++) {
 }
 
 console.log(smallest);
+
+
+//---------------------------------------------------------------------- problem 15
+// Count positive numbers
+
+let numbers = [-2, 5, -1, 10, 7];
+let count = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    count++;
+  }
+}
+
+console.log(count);
