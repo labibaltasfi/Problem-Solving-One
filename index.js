@@ -310,3 +310,18 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(count);
+
+//---------------------------------------------------------------------- problem 20
+// Count occurrences of a character
+
+let text = "javascript";
+let target = "a";
+let count = 0;
+
+for (let i = 0; i < text.length; i++) {
+  if (text[i] === target) {
+    count++;
+  }
+}
+
+console.log(count);
