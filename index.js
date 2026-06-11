@@ -325,3 +325,23 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(count);
+
+//---------------------------------------------------------------------- problem 21
+// Remove vowels
+
+let text = "javascript";
+let result = "";
+
+for (let i = 0; i < text.length; i++) {
+  if (
+    text[i] !== "a" &&
+    text[i] !== "e" &&
+    text[i] !== "i" &&
+    text[i] !== "o" &&
+    text[i] !== "u"
+  ) {
+    result += text[i];
+  }
+}
+
+console.log(result);
