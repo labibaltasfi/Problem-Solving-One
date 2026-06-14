@@ -345,3 +345,12 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(result);
+
+//---------------------------------------------------------------------- problem 22
+// Multiplication table
+
+let number = 7;
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`${number} x ${i} = ${number * i}`);
+}
