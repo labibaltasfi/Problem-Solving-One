@@ -354,3 +354,22 @@ let number = 7;
 for (let i = 1; i <= 10; i++) {
   console.log(`${number} x ${i} = ${number * i}`);
 }
+
+//---------------------------------------------------------------------- problem 23
+// Check Armstrong Number
+
+let number = 153;
+let original = number;
+let sum = 0;
+
+while (number > 0) {
+  let digit = number % 10;
+  sum += digit ** 3;
+  number = Math.floor(number / 10);
+}
+
+if (sum === original) {
+  console.log("Armstrong");
+} else {
+  console.log("Not Armstrong");
+}
