@@ -382,3 +382,26 @@ for (let i = 1; i <= 20; i++) {
     console.log(i);
   }
 }
+
+
+//---------------------------------------------------------------------- problem 25
+// Find second largest number
+
+let numbers = [10, 45, 22, 90, 70];
+
+let largest = -Infinity;
+let secondLargest = -Infinity;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > largest) {
+    secondLargest = largest;
+    largest = numbers[i];
+  } else if (
+    numbers[i] > secondLargest &&
+    numbers[i] !== largest
+  ) {
+    secondLargest = numbers[i];
+  }
+}
+
+console.log(secondLargest);
