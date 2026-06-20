@@ -405,3 +405,17 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(secondLargest);
+
+//---------------------------------------------------------------------- problem 26
+// Count lowercase letters
+
+let text = "JavaScript123";
+let count = 0;
+
+for (let i = 0; i < text.length; i++) {
+  if (text[i] >= "a" && text[i] <= "z") {
+    count++;
+  }
+}
+
+console.log(count);
