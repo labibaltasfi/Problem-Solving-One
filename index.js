@@ -419,3 +419,17 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(count);
+
+//---------------------------------------------------------------------- problem 27
+// Find maximum from array
+
+let numbers = [5, 12, 8, 20, 3];
+let max = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] > max) {
+    max = numbers[i];
+  }
+}
+
+console.log(max);
