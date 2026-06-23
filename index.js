@@ -447,3 +447,14 @@ for (let i = 1; i < numbers.length; i++) {
 }
 
 console.log(min);
+
+//---------------------------------------------------------------------- problem 29
+// Check if a number is even or odd
+
+let number = 15;
+
+if (number % 2 === 0) {
+  console.log("Even");
+} else {
+  console.log("Odd");
+}
