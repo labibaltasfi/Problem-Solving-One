@@ -433,3 +433,17 @@ for (let i = 1; i < numbers.length; i++) {
 }
 
 console.log(max);
+
+//---------------------------------------------------------------------- problem 28
+// Find minimum from array
+
+let numbers = [5, 12, 8, 20, 3];
+let min = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] < min) {
+    min = numbers[i];
+  }
+}
+
+console.log(min);
