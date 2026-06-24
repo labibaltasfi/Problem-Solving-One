@@ -458,3 +458,10 @@ if (number % 2 === 0) {
 } else {
   console.log("Odd");
 }
+
+//---------------------------------------------------------------------- problem 30
+// Print numbers from 10 to 1
+
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
