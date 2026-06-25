@@ -459,9 +459,23 @@ if (number % 2 === 0) {
   console.log("Odd");
 }
 
-//---------------------------------------------------------------------- problem 30
+//----------------------------------------------------------------------  problem 30
 // Print numbers from 10 to 1
 
 for (let i = 10; i >= 1; i--) {
   console.log(i);
 }
+
+//---------------------------------------------------------------------- problem 31
+// Count negative numbers
+
+let numbers = [5, -2, 8, -1, -7];
+let count = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] < 0) {
+    count++;
+  }
+}
+
+console.log(count);
