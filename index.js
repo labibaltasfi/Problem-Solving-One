@@ -504,3 +504,17 @@ for (let i = 1; i < number; i++) {
 }
 
 console.log(sum === number ? "Perfect" : "Not Perfect");
+
+//---------------------------------------------------------------------- problem 34
+// Count spaces in a string
+
+let text = "I love JavaScript";
+let count = 0;
+
+for (let i = 0; i < text.length; i++) {
+  if (text[i] === " ") {
+    count++;
+  }
+}
+
+console.log(count);
