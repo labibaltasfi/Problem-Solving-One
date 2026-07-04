@@ -518,3 +518,19 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(count);
+
+//---------------------------------------------------------------------- problem 35
+// Replace spaces with hyphens
+
+let text = "I love JavaScript";
+let result = "";
+
+for (let i = 0; i < text.length; i++) {
+  if (text[i] === " ") {
+    result += "-";
+  } else {
+    result += text[i];
+  }
+}
+
+console.log(result);
