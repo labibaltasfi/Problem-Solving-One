@@ -534,3 +534,11 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(result);
+
+
+//---------------------------------------------------------------------- problem 36
+// Print square numbers from 1 to 10
+
+for (let i = 1; i <= 10; i++) {
+  console.log(i * i);
+}
