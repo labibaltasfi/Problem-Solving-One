@@ -570,3 +570,18 @@ for (let i = 5; i >= 1; i--) {
 
   console.log(row);
 }
+
+//---------------------------------------------------------------------- problem 39
+// Check if array is sorted
+
+let numbers = [1, 2, 3, 4, 5];
+let sorted = true;
+
+for (let i = 0; i < numbers.length - 1; i++) {
+  if (numbers[i] > numbers[i + 1]) {
+    sorted = false;
+    break;
+  }
+}
+
+console.log(sorted);
