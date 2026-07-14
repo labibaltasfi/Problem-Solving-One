@@ -601,3 +601,26 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(count);
+
+//---------------------------------------------------------------------- problem 41
+// Find the first non-repeating character
+
+let text = "aabbcddee";
+let result = "";
+
+for (let i = 0; i < text.length; i++) {
+  let count = 0;
+
+  for (let j = 0; j < text.length; j++) {
+    if (text[i] === text[j]) {
+      count++;
+    }
+  }
+
+  if (count === 1) {
+    result = text[i];
+    break;
+  }
+}
+
+console.log(result);
