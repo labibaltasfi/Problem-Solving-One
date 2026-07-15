@@ -624,3 +624,24 @@ for (let i = 0; i < text.length; i++) {
 }
 
 console.log(result);
+
+
+//---------------------------------------------------------------------- problem 42
+// Find missing number from 1 to 10
+
+let numbers = [1, 2, 3, 4, 6, 7, 8, 9, 10];
+
+for (let i = 1; i <= 10; i++) {
+  let found = false;
+
+  for (let j = 0; j < numbers.length; j++) {
+    if (i === numbers[j]) {
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    console.log(i);
+  }
+}
