@@ -645,3 +645,24 @@ for (let i = 1; i <= 10; i++) {
     console.log(i);
   }
 }
+
+
+//---------------------------------------------------------------------- problem 43
+// Move all zeros to the end
+
+let numbers = [0, 1, 0, 3, 12];
+let result = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] !== 0) {
+    result.push(numbers[i]);
+  }
+}
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] === 0) {
+    result.push(numbers[i]);
+  }
+}
+
+console.log(result);
