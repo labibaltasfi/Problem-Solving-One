@@ -666,3 +666,18 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(result);
+
+//---------------------------------------------------------------------- problem 44
+// Find longest word
+
+let text = "I love JavaScript programming";
+let words = text.split(" ");
+let longest = words[0];
+
+for (let i = 1; i < words.length; i++) {
+  if (words[i].length > longest.length) {
+    longest = words[i];
+  }
+}
+
+console.log(longest);
