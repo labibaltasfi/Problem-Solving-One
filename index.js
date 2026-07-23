@@ -681,3 +681,27 @@ for (let i = 1; i < words.length; i++) {
 }
 
 console.log(longest);
+
+
+//---------------------------------------------------------------------- problem 45
+// Remove duplicate numbers without Set
+
+let numbers = [1, 2, 2, 3, 4, 4, 5];
+let result = [];
+
+for (let i = 0; i < numbers.length; i++) {
+  let duplicate = false;
+
+  for (let j = 0; j < result.length; j++) {
+    if (numbers[i] === result[j]) {
+      duplicate = true;
+      break;
+    }
+  }
+
+  if (!duplicate) {
+    result.push(numbers[i]);
+  }
+}
+
+console.log(result);
